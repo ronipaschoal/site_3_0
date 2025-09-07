@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Roni Paschoal - Software Engineer",
-  description: "Portfolio of Roni Paschoal, a software engineer specializing in web and mobile development.",
+  description:
+    "Portfolio of Roni Paschoal, a software engineer specializing in web and mobile development.",
 };
 
 export default function RootLayout({
