@@ -4,8 +4,10 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <Section id="contact" title="Get in Touch">
-      <p>I&apos;m avaliable to help in any way I can, just send a hello!</p>
-      <p className="row-start-2 flex flex-row items-center gap-32">
+      <p className="pb-10">
+        I&apos;m avaliable to help in any way I can, just send a hello!
+      </p>
+      <p className="row-start-2 flex flex-row items-center gap-10">
         <a
           className="flex flex-col justify-center items-center gap-2"
           href="mailto:ronipaschoal@gmail.com"

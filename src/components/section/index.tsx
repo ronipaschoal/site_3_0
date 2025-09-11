@@ -10,12 +10,12 @@ const Section = ({ children, id, title }: Props) => {
   return (
     <section
       id={id}
-      className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20"
+      className={`font-sans flex text-center ${
+        title ? "flex-col" : "items-center justify-center"
+      } min-h-screen p-8 sm:p-20`}
     >
-      {title && <h3 className="text-4xl">{title}</h3>}
-      <div className="flex flex-col gap-[32px] row-start-2 items-center">
-        {children}
-      </div>
+      {title && <h3 className="text-4xl pt-12 pb-12">{title}</h3>}
+      <div className={`flex flex-col items-center text-center`}>{children}</div>
     </section>
   );
 };
