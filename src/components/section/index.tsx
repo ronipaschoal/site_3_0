@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import "./styles.css";
+
 interface Props {
   id: string;
   title?: string;
@@ -8,14 +10,11 @@ interface Props {
 
 const Section = ({ children, id, title }: Props) => {
   return (
-    <section
-      id={id}
-      className={`font-sans flex text-center ${
-        title ? "flex-col" : "items-center justify-center"
-      } min-h-screen p-8 sm:p-20`}
-    >
-      {title && <h3 className="text-4xl pt-12 pb-12">{title}</h3>}
-      <div className={`flex flex-col items-center text-center`}>{children}</div>
+    <section id={id} className="section">
+      {title && <h3 className="section--title">{title}</h3>}
+      <div className={`section--content ${title ? "with-title" : ""}`}>
+        {children}
+      </div>
     </section>
   );
 };
