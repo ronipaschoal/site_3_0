@@ -5,21 +5,21 @@
 }
 
 .section--title {
-  font-size: 2.25rem;
+  height: 25vh;
   padding-bottom: 2rem;
+  font-size: 2.25rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 25vh;
 }
 
 .section--content {
   min-height: 100vh;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
 }
 
 .section--content.with-title {
