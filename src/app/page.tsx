@@ -4,12 +4,13 @@ import Projects from "./home/projects";
 import Contact from "./home/contact";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Language } from "@/types/language";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <main className="flex flex-col gap-[32px]">
+      <Navbar language={Language.EN} />
+      <main>
         <Welcome />
         <About />
         <Projects />

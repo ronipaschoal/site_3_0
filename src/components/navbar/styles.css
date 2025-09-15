@@ -1,0 +1,21 @@
+.navbar {
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.9;
+  position: fixed;
+  background-color: #000000;
+  color: #bbc1ce;
+  border-bottom: 1px solid #ffaeaf;
+}
+
+.navbar__container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,22 @@
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__menu .divider {
+  border: 1px solid transparent;
+  height: 1.5rem;
+  background: #ffaeaf;
+  margin: 0 1rem;
+}
+
+.navbar__menu--item:hover {
+  color: #ffaeaf;
+}
+
+@media (max-width: 767px) {
+  .navbar__menu {
+    display: none;
+  }
+}

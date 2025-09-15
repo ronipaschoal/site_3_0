@@ -1,0 +1,44 @@
+.navbar__menu-mobile--content {
+  position: fixed;
+  z-index: 9;
+  top: 100vh;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: top 0.5s ease-in-out;
+}
+
+.navbar__menu-mobile--open {
+  top: 4rem;
+}
+
+.navbar__menu-mobile--item {
+  width: 100%;
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.navbar__menu-mobile--content .divider {
+  border: 1px solid transparent;
+  height: 1px;
+  width: 40%;
+  background: #ffaeaf;
+  margin: 1rem 0;
+}
+
+.navbar__menu-mobile--item:hover,
+.navbar__menu-mobile--button:hover {
+  color: #ffaeaf;
+}
+
+@media (min-width: 768px) {
+  .navbar__menu-mobile {
+    display: none;
+  }
+}
